@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+public class Main {
+public static void main(String[] args) {
+ArrayList<Figure> figures = new ArrayList<>();
+Figure circle = new Circle(3);
+figures.add(circle);
+Figure parallelogram = new Parallelogram(10, 5, 8);
+figures.add(parallelogram);
+Figure rectangle = new Rectangle(15, 10);
+figures.add(rectangle);
+for (Figure figure : figures) { System.out.println("Area: " + figure.getArea() + " units.");
+System.out.println("Perimeter: " + figure.getPerimeter() + " units.\n");
+}
+}
+}
